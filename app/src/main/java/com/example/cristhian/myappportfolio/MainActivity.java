@@ -17,16 +17,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final Context context = this;
-        Button spotifyButton = (Button) findViewById(R.id.spotifyButton);
-        spotifyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), SpotifyActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void clickOnBtn(View view) {
