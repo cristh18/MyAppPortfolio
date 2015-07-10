@@ -2,15 +2,12 @@ package com.example.cristhian.myappportfolio;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -21,8 +18,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       final Context context = this;
-        Button spotifyButton = (Button)findViewById(R.id.spotifyButton);
+        final Context context = this;
+        Button spotifyButton = (Button) findViewById(R.id.spotifyButton);
         spotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,11 +30,11 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void clickOnBtn(View view) {
-        Button btn = (Button)view;
+        Button btn = (Button) view;
         Toast.makeText(getApplicationContext(), (CharSequence) btn.getContentDescription(), Toast.LENGTH_SHORT).show();
     }
 
-    private void toastText(String s){
+    private void toastText(String s) {
         Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
     }
 
